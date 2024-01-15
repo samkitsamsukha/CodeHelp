@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an issue form</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+        *{
+            font-family: rethink sans;
+        }
+        body{
+            /* background-color: rgb(252, 220, 252); */
+            background-color: rgb(247, 242, 253);
+            margin: 0px;
+        }
+        div.heading{
+            padding: 20px;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+        a{
+            text-decoration: none;
+        }
+        table{
+            font-size: 20px;
+        }
+        #wm{
+            font-family: rethink sans;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        #title{
+            font-family: rethink sans;
+            font-size: 32px;
+            font-weight: 900;
+            margin: 20vw;
+            color:rgb(78, 0, 78);
+            
+        }
+        h2{
+            color: rgb(78, 0, 78);
+            text-align: center;
+        }
+        #submit{
+            padding: 4px 10px 4px 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+        #submit:hover{
+            background-color: greenyellow;
+            cursor: pointer;
+            color: black;
+        }
+        #cancel{
+            padding: 4px 10px 4px 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+        #cancel:hover{
+            background-color: red;
+            cursor: pointer;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <span id="wm"><a href="index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 27vw;">FACING ANY PROBLEMS?<span>
+    </div>
+    <br>
+    <h2>Report your issues here. All problems reported helps us make the website better. Thank you</h2>
+    <br>
+    <table align="center" cellspacing="0px" cellpadding="15px">
+        <form action="/submit">
+            <tr>
+                <td><label for="name">Enter your Name</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Your answer here" required></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Enter your e-mail address</label></td>
+                <td><input type="text" name="mail" id="mail" placeholder="Your answer here" required></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Enter your contact number</label></td>
+                <td><input type="number" name="phno" id="phno" placeholder="Your answer here" required></td>
+            </tr>
+            <tr>
+                <td>Under which domain does your poblem fall:</td>
+                <td>
+                    <select required>
+                        <option>Website loading issue</option>
+                        <option>Syntax error in reffered code</option>
+                        <option>Taking too long to load</option>
+                        <option></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="details">What was the problem you were facing?</label></td>
+                <td><textarea name="sugg" id="sugg" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

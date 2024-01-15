@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(243, 243, 254);
+}
+div.heading{
+    padding: 20px;
+    background-color: rgb(205, 151, 255);
+    color: rgb(78, 0, 78);
+}
+#wm{
+    font-family: rethink sans;
+    font-size: 20px;
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+}
+#title{
+    font-family: rethink sans;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 20vw;
+}
+h1{
+    font-family: rethink sans;
+    font-weight: 900;
+    
+}
+h2{
+    font-family: rethink sans;
+    font-weight: 900;
+}
+#q{
+    color: rgb(78, 0, 78);
+    padding: 15px;
+    font-family: rethink sans;
+    font-weight: 900;
+}
+h3{
+    padding: 15px;
+    font-family: rethink sans;
+    font-weight: 900;
+    
+}
+p{
+    padding: 15px;
+    font-family: poppins;
+    font-weight: 600;
+}
+ul{
+    padding: 15px;
+    list-style-type: none;
+}
+ul li{
+    
+    font-family: rethink sans;
+}
+.desc{
+    font-family: rethink sans;
+}
+.container{
+    width: 70vw;
+    padding: 32px 0px;
+    margin: auto;
+    font-family: Rethink Sans;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 15px !important;
+}
+.toolbar-item button:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.output{
+    align-items: center;
+    justify-content: center;
+}

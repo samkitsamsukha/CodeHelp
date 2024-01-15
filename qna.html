@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+
+        * {
+            font-family: rethink sans;
+
+
+        }
+
+        body {
+            /* background-color: rgb(252, 220, 252); */
+            background-color: rgb(247, 242, 253);
+            margin: 0px;
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        h1 {
+            color: rgb(78, 0, 78);
+            font-size: 24px;
+        }
+
+        div.heading {
+            /* width: 100%; */
+            padding: 20px;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+
+        #wm {
+            font-family: rethink sans;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p a{
+            color: green;
+        }
+
+        #title {
+            font-family: rethink sans;
+            font-size: 32px;
+            font-weight: 900;
+            /* margin: 20vw; */
+            margin: 26vw;
+            color: rgb(78, 0, 78);
+        }
+
+        .description {
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(78, 0, 78);
+            margin: 50px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        #happy-coding {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(13, 0, 132);
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: rgb(13, 0, 132);
+        }
+
+        .section-center {
+            width: 90vw;
+            margin: 50px auto 0;
+            max-width: 820px;
+        }
+
+        .question {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 1rem 1rem 0 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .question-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: capitalize;
+            padding-bottom: 1rem;
+        }
+
+        .question-title p {
+            letter-spacing: 0.1rem;
+            color: rgb(78, 0, 78)   ;
+            font-weight: bolder;
+        }
+
+        .question-btn {
+            font-size: 1.5rem;
+            background: transparent;
+            border-color: transparent;
+            cursor: pointer;
+            color: rgb(78, 0, 78);
+        }
+
+        .question-text {
+            /* padding: 1rem 0 1.5rem 0; */
+            padding: 5px 5px 5px 5px;
+            border-top: 1px solid rgb(197, 197, 197);
+        }
+
+        /* hide text */
+        .question-text {
+            display: none;
+        }
+
+        .show-text .question-text {
+            display: block;
+        }
+
+        .minus-icon {
+            display: none;
+        }
+
+        .show-text .minus-icon {
+            display: inline;
+        }
+
+        .show-text .plus-icon {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <span id="wm"><a href="index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title">Frequently Asked Questions<span>
+    </div>
+    <p class="description">Here are some of the frequently asked questions which any beginner has in their mind and we
+        have tried to solve it in the best possible manner. Do check it out if you've just started to code. These
+        questions will help you set the perfect roadmap of how you would like to go about your coding journey. <span
+            id="happy-coding">Happy Coding :)</span></p>
+
+    <section class="questions">
+        <!-- questions -->
+        <div class="section-center">
+            <!-- single question -->
+            <article class="question">
+                <!-- question title -->
+                <div class="question-title">
+                    <p>What Programming Language should I start with?</p>
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- question text -->
+                <div class="question-text">
+                    <p>
+                        I usually tell most people to start by learning HTML and CSS, then move into learning JavaScript. The reason is that JavaScript is used everywhere: frontend, backend, and even to build mobile apps. It has many use cases, which is why I think it's smart to learn.
+                        <br><br>When it comes to deciding which language or technologies to learn, it all comes down to your end goals.
+                        <br><br>If you want to get into tech professionally, here's another tip: start by looking up dream job listings, see what skills/experience they're looking for, and then use that to reverse-engineer what you should learn.
+                    </p>
+                </div>
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+                <!-- question title -->
+                <div class="question-title">
+                    <p>Should I use free or paid courses to learn to code?</p>
+                    <!-- button -->
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- question text -->
+                <div class="question-text">
+                    <p>
+                        Free tools are great for dipping your toe into the water to see if you like coding, but generally, I recommend using paid resources. While there are some great free resources out there (see below), oftentimes you get what you pay for. Paid resources are likely to be much easier to use and understand. You're also likely to have better support if you get stuck, and more features and perks that other (free) resources just can't offer.
+                        <br><br>Also, I find that when I pay for something, I'm much more motivated to use it than when I get something for free. Think of it like paying for a gym membership - you're more likely to exercise when you pay to attend, so it's like an added sense of accountability!
+                    </p>
+                </div>
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+                <!-- question title -->
+                <div class="question-title">
+                    <p>What is the best course of action for me to learn HTML, CSS, JavaScript?</p>
+                    <!-- button -->
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- question text -->
+                <div class="question-text">
+                    <p>
+                        These are some of the most common languages, and the ones that are most recommended as a starting point for people completely new to coding, so there's a bunch of courses online to help you out.
+                        <br><br> If you want to focus on front-end, you should definitely master these three first—especially JavaScript. If you know JavaScript well, it won't be hard to become a front-end web developer. There are loads of JavaScript classes online for all different skill levels, whether you're a beginner or looking to level up the skills you have already. I recommend looking into Team Treehouse, and <a href="https://www.coursera.org/courseraplus/special/newyear2024?utm_source=gg&utm_medium=sem&utm_campaign=B2C_India_FTCOF_Branded_ARTE_EXP&utm_content=B2C&campaignid=20590309416&adgroupid=155702724684&device=c&keyword=coursera&matchtype=e&network=g&devicemodel=&adpostion=&creativeid=685572892020&hide_mobile_promo&gad_source=1&gclid=CjwKCAiAqY6tBhAtEiwAHeRopSHyjrcrZUx2S99Duq2QPR6iAWPmYaDRQ478VVSUXYBIEF7jo3SB1BoCSG8QAvD_BwE">Coursera</a> also has a great class on HTML, CSS, and JavaScript.
+                        <br><br>What really matters most, though, is simply building things with your coding skills. Putting your skills into practice is the best way to learn “on the job”, so to speak. Check out the podcast interview with Alexander Kallaway, creator of <a href="https://www.100daysofcode.com/">#100daysofcode</a>, where best ways for beginners to learn how to code is discussed.
+                    </p>
+                </div>
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+                <!-- question title -->
+                <div class="question-title">
+                    <p>I Find it hard to move past copying and pasting sections of code to get out of tutorials. How do I progress past this?</p>
+                    <!-- button -->
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- question text -->
+                <div class="question-text">
+                    <p>
+                        I know exactly what you mean. Honestly, the only thing you can do is keep practicing! Go off on your own (i.e. no copying and pasting but doing what you can from memory) slowly—everyone learns and remembers things at their own pace, so there's no rush. Also, make sure you're starting with very small projects rather than trying to dive into big ones. <br><br>A few places that could really help you are <a href="https://www.freecodecamp.org/">freeCodeCamp</a> and <a href="https://www.100daysofcode.com/">#100daysofcode</a>. Definitely recommend checking those out!
+                    </p>
+                </div>
+            </article>
+            <!-- end of single question -->
+            <!-- single question -->
+            <article class="question">
+                <!-- question title -->
+                <div class="question-title">
+                    <p>What is the fastest way to learn to code?</p>
+                    <!-- button -->
+                    <button type="button" class="question-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- question text -->
+                <div class="question-text">
+                    <p>
+                        To be a good programmer, there are no shortcuts. That is not the right way to think about it :) <br><br> Instead, you should take time mastering the fundamentals. This will help you in the long run. I recommend listening to this episode of the podcast about why it’s important to focus on the fundamentals first. <br><br>Learning to code isn’t something that can be rushed. It’s exactly the same as learning a new language. It takes time to master, but it’ll be worth it once you do.
+                    </p>
+                </div>
+            </article>
+            <!-- end of single question -->
+    </section>
+
+    <script src="JavaScript/faqs.js"></script>
+</body>
+
+</html>

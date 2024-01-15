@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+        *{
+            font-family: rethink sans;
+        }
+        body{
+            /* background-color: rgb(252, 220, 252); */
+            background-color: rgb(247, 242, 253);
+            margin: 0px;
+        }
+        div.heading{
+            padding: 20px;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+        a{
+            text-decoration: none;
+        }
+        table{
+            font-size: 20px;
+        }
+        #wm{
+            font-family: rethink sans;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        #title{
+            font-family: rethink sans;
+            font-size: 32px;
+            font-weight: 900;
+            margin: 20vw;
+            color:rgb(78, 0, 78);
+        }
+        h2{
+            color: rgb(78, 0, 78);
+            text-align: center;
+        }
+        #submit{
+            padding: 4px 10px 4px 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+        #submit:hover{
+            background-color: greenyellow;
+            cursor: pointer;
+            color: black;
+        }
+        #cancel{
+            padding: 4px 10px 4px 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(205, 151, 255);
+            color: rgb(78, 0, 78);
+        }
+        #cancel:hover{
+            background-color: red;
+            cursor: pointer;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <span id="wm"><a href="index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 35vw;">FEEDBACK FORM<span>
+    </div>
+    <br>
+    <h2>Please fill this form to leave your feedback! <br> We appreciate your valuable suggestions.</h2>
+    <br>
+    <table align="center" cellspacing="0px" cellpadding="15px">
+        <form action="/submit">
+            <tr>
+                <td><label for="name">Enter your Name</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Your answer here"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Enter your e-mail address</label></td>
+                <td><input type="text" name="mail" id="mail" placeholder="Your answer here"></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Enter your contact number</label></td>
+                <td><input type="number" name="phno" id="phno" placeholder="Your answer here"></td>
+            </tr>
+            <tr>
+                <td>Rating</td>
+                <td>
+                    <label for="rate"><input type="radio" name="rate" id="rate">1</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">2</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">3</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">4</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">5</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="sugg">Any suggestions?</label></td>
+                <td><textarea name="sugg" id="sugg" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

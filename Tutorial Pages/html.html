@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <script src="prism.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- TEXTUAL CONTENT-->
+    <div class="heading">
+        <span id="wm">&lt/&gt CodeHelp</span>
+        <span id="title">HTML - HYPER TEXT MARKUP LANGUAGE<span>
+    </div>
+    <h2 id="q">What is HTML?</h2>
+    <p>
+        HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web pages. It's a markup language used to structure content on the web, defining elements like headings, paragraphs, links, and images. HTML forms the backbone of web content. In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks that create the structure and look of a website, similar to how bricks and mortar are used to build a house.
+        <br>In a nutshell:
+        <ul>
+            <li>HTML is the language of the web, used to create websites.</li>
+            <li>HTML defines the backbone structure or layout of web pages that we see on the Internet.</li>
+            <li>HTML consists of a set of tags contained within an HTML document, and the associated files typically have either a ".html" or ".htm" extension.</li>
+            <li>There are several versions of HTML, with HTML5 being the most recent version.</li>
+        </ul>
+    </p>
+    <hr>
+    <div class="container">
+        <ol>
+            <h2>HTML BASICS</h2>
+                <li><b>HTML Boilerplate: </b>
+                <ul  style="list-style-type: none;">
+                    <li class="desc">&lthtml&gt - Root of a HTML page</li>
+                    <li class="desc">&lthead&gt - Header part of web page</li>
+                    <li class="desc">&lttitle&gt - Title of a web page</li>
+                    <li class="desc">&ltbody&gt - Body of a web page</li>
+                </ul>
+                <pre class="language-html"><code>&lthtml&gt
+    &lthead&gt
+        &lttitle&gtDocument&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+        This is the body of my web page
+    &lt/body&gt
+&lt/html&gt</code></pre>
+            </li>
+            <li><b>Heading Tag: </b><span class="desc">Heading tags ranging from &lth1&gt to &lth6&gt are used to define the structure and layout of text on a web page. These tags help create a hierarchical organization of content, making it easier for both users and search engines to understand the page's content.
+            <pre class="language-html"><code>&lth1&gtThis is Heading 1&lt/h1&gt
+&lth2&gtThis is Heading 2&lt/h2&gt
+&lth3&gtThis is Heading 3&lt/h3&gt
+&lth4&gtThis is Heading 4&lt/h4&gt
+&lth5&gtThis is Heading 5&lt/h5&gt
+&lth6&gtThis is Heading 6&lt/h6&gt</code></pre>
+                <div class="output">
+                    <b>Output-</b><br>
+                    <h1 align="center">This is Heading 1</h1>
+                    <h2 align="center">This is Heading 2</h2>
+                    <h3 style="padding: 0;" align="center">This is Heading 3</h3>
+                    <h4 align="center">This is Heading 4</h4>
+                    <h5 align="center">This is Heading 5</h5>
+                    <h6 align="center">This is Heading 6</h6>
+                    <br>
+                </div>
+            </span>
+            </li>
+            <li>
+                <b>Paragraph Tag: </b><span class="desc">Paragraph Tags are used to display a chunk of text items.</span>
+                <pre class="language-html"><code>&ltp&gtThis is an example of paragraph tag&lt/p&gt</code></pre>
+            </li>
+            <li>
+                <b>Anchor Tag: </b><span class="desc">This tag is used to attach a hyperlink to the web page. It has an attribute <b>'href'</b> which is used to specify the url.</span>
+                <pre class="language-html"><code>&lta href="specified path" target="your desired location"&gtDisplay Name&lt/a&gt</code></pre>
+            </li>
+            <li>
+                <b>Image Tag: </b><span class="desc">This tag is used to add a image to the webpage. <b>'src'</b> defines the path of the image and is a mandatory attribute along with <b>'alt'</b> which specifies the alternate textual content. The optional attributes include <b>'width'</b> and <b>'height'</b>.</span>
+                <pre class="language-html"><code>&ltimg src="image.png" alt="Description" width="300" height="100" /&gt</code></pre>
+            </li>
+            <li>
+                <b>Lists: </b><span class="desc">There are three types of lists in HTML
+                    <br>a. Ordered List - <b>&ltol&gt</b>
+                    <br>b. UnOrdered List - <b>&ltul&gt</b>
+                    <br>c. Definition List - <b>&ltdl&gt</b>
+                    <br>The <b>&ltli&gt</b> tag is used to create a List Element
+                    <br>Lists also have some attributes such as <b>type</b> which can be used to convert bullets into square, circle or none. In case of ordered lists it can be used to convert the numbering in terms of 'I', 'i', 'a', 'A'. 
+                    <br>The <b>'start'</b> attribute can be used define the starting point of a list and <b>'reversed'</b> can be used to reverse the numbering order.
+                    <pre class="language-html"><code>Ordered List
+&ltol type="square"&gt
+    &ltli&gtItem 1&lt/li&gt
+    &ltli&gtItem 2&lt/li&gt
+&lt/ol&gt
+Unordered List 
+&ltul type="A"&gt
+    &ltli&gtItem 1&lt/li&gt
+    &ltli&gtItem 2&lt/li&gt
+&lt/ul&gt
+Definition List
+&ltdl&gt
+    &ltdt&gtHTML&lt/dt&gt
+    &ltdd&gtHyper Text Markup Language&lt/dd&gt
+    &ltdt&gtCSS&lt/dt&gt
+    &ltdd&gtCascading Style Sheet&lt/dd&gt
+&lt/dl&gt</code></pre>
+                </span>
+                <div class="output">
+                    <b>Output - </b><br>
+                    <ol type="square">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ol>
+                    Unordered List 
+                    <ul type="A">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                    Definition List
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Hyper Text Markup Language</dd>
+                        <dt>CSS</dt>
+                        <dd>Cascading Style Sheet</dd>
+                    </dl>
+                    <br>    
+                </div>
+            </li>
+            <li>
+                <b>Tables: </b><span class="desc">Tables help us in data represntation and have a vast application. <b>&lttable&gt</b> is used to create the table, <b>&lttr&gt</b> is used to create rows, <b>&ltth&gt</b> is used to create headings and <b>&lttd&gt</b> is used to enter table data. There are some other tags as well for example <b>&ltcaption&gt</b> to put caption in the table, <b>&ltthead&gt</b> to specify table header, <b>&lttbody&gt</b> to specify table body and <b>&lttfoot&gt</b> to create table footer. The attributes <b>rowspan</b> & <b>colspan</b> are used to merge cells.</span>
+                <pre class="language-html"><code>&lttable border="2px solid black"&gt
+        &lttr&gt
+            &ltth colspan="2"&gtBranch Details&lt/th&gt
+        &lt/tr&gt
+        &lttr&gt
+            &ltth&gtName&lt/th&gt
+            &ltth&gtBranch&lt/th&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gtPerson A&lt/td&gt
+            &lttd rowspan="2" align="center"&gtCSE&lt/td&gt
+        &lt/tr&gt
+        &lttr&gt
+            &lttd&gtPerson B&lt/td&gt
+        &lt/tr&gt
+    &lt/table&gt</code></pre>
+                <div class="output">
+                    <b>Output - </b><br>
+                    <table border="2px solid black">
+                        <tr>
+                            <th colspan="2">Branch Details</th>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Branch</th>
+                        </tr>
+                        <tr>
+                            <td>Person A</td>
+                            <td rowspan="2" align="center">CSE</td>
+                        </tr>
+                        <tr>
+                            <td>Person B</td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+            </li>
+            <li>
+                <b>Forms: </b><span class="desc">Forms again form an integral part of HTML. They have a lot of applications including such as feedbacks, reviews, issues, search engine and many more
+                    <pre class="language-html"><code>&ltinput type="" name="" value=""&gt</code></pre>
+                    <ul>
+                        <li>The "type" attribute specifies the type of input control (e.g., text, password, checkbox).</li>
+                        <li>The "name" attribute is used for identifying the control, especially when the data is sent to the server.</li>
+                        <li>The "value" attribute sets a default value for the control, which the user can overwrite.</li>
+                    </ul>
+                    <pre class="language-html"><code>&ltform action="/submit" method="post"&gt
+&ltlabel for="username"&gtUsername:&lt/label&gt
+&ltinput type="text" id="username" name="username" required&gt
+
+&ltlabel for="password"&gtPassword:&lt/label&gt
+&ltinput type="password" id="password" name="password" required&gt
+
+&ltlabel&gtGender:&lt/label&gt
+&ltinput type="radio" id="male" name="gender" value="male"&gt
+&ltlabel for="male"&gtMale&lt/label&gt
+&ltinput type="radio" id="female" name="gender" value="female"&gt
+&ltlabel for="female"&gtFemale&lt/label&gt
+&lt
+&ltinput type="submit" value="Submit"&gt
+&lt/form&gt</code></pre>
+                This is a sample form which takes username and password as input. Along with that it also has radio buttons to enter the gender and a submit button. <br>There are various input types which will will be shown in the following code snippets</span>
+                <pre class="language-html"><code>   &lt!-- Checkbox --&gt
+&ltinput type="checkbox" name="" id="""&gt
+    &lt!-- Text Area --&gt
+&lttextarea cols="30" rows="5" name="" id=""&gt&lt/textarea&gt
+    &lt!-- Drop Down --&gt
+&ltselect name="" id=""&gtAsk the question?
+    &ltoption value=""&gtOption 1&lt/option&gt
+    &ltoption value=""&gtOption 2&lt/option&gt
+&lt/select&gt</code></pre>
+            <span class="desc">Their are some other attributes in HTML forms such as required, which makes it essential for the user to respond to a question. Autofocus automatically highlights a specific parameter as soon as the form is loaded. Pattern is used to defined the probable values for a parameter.</span>
+                <pre class="language-html"><code>&lt!-- required --&gt
+&ltinput type="text" name="sample" id="sample" required&gt
+&lt!-- autofocus --&gt
+&ltinput type="text" name="sample" id="sample" autofocus&gt
+&lt!-- pattern --&gt
+&ltinput type="text" name="sample" id="sample" pattern="[a-zA-Z0-9]+"&gt</code></pre>
+            </li>
+            <li>
+                <b>Link and Script tags: </b><span class="desc">Link tag is used to link a stylesheet to the html file while we use script to attach javascript gile to html.</span>
+                <pre class="language-html"><code>&lthead&gt
+    &ltlink rel="stylesheet" href="style.css"&gt
+&lt/head&gt
+&ltbody&gt
+    &ltscript src="script.js"&gt&lt/script&gt
+&lt/body&gt</code></pre>
+            </li>
+            <li>
+                <b>Video and Audio: </b><span class="desc">The &ltvideo&gt tag is used to embed video files in an HTML document while we use &ltaudio&gt to embed audio files. It supports multiple attributes to control the video, audio playback. <br>
+                <ol type="a">Attributes :-
+                    <li>src - to specify path of video</li>
+                    <li>controls - add controls like play, pause and volume</li>
+                    <li>autoplay - automatically video starts when web page loads</li>
+                    <li>loop - repeats the video once it ends</li>
+                    <li>muted - mutes the video by default</li>
+                </ol></span>
+                <pre class="language-html"><code>&ltvideo src="video.mp4" controls&gt&lt/video&gt
+&ltaudio src="audio.mp3" controls&gt&lt/audio&gt</code></pre>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
