@@ -8,6 +8,7 @@ body{
     background-color: rgb(243, 243, 254);
 }
 div.heading{
+    min-width: 100vw;
     padding: 20px;
     background-color: rgb(205, 151, 255);
     color: rgb(78, 0, 78);
@@ -21,10 +22,12 @@ a{
     text-decoration: none;
 }
 #title{
+    /* padding: 0px; */
+    /* min-width: 100vw; */
     font-family: rethink sans;
     font-size: 32px;
     font-weight: 900;
-    margin: 20vw;
+    margin: auto;
 }
 h1{
     font-family: rethink sans;
@@ -84,4 +87,17 @@ ul li{
 .output{
     align-items: center;
     justify-content: center;
+}
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    #title {
+        margin: 10px;
+    }
+    .heading{
+        min-width: 100vw;
+    }
+    .container {
+        width: 90vw;
+    }
 }
