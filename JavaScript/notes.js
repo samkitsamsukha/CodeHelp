@@ -1,7 +1,5 @@
-
 const btnEl = document.getElementById("btn");
 const appEl = document.getElementById("app");
-const invertbtn = document.getElementById("invert");
 
 getNotes().forEach((note) => {
     const noteEl = createNoteEl(note.id, note.content);
@@ -66,3 +64,5 @@ function saveNote(notes){
 function getNotes(){
     return JSON.parse(localStorage.getItem("note-app") || "[]");
 }
+
+btnEl.addEventListener("click", addNote);
