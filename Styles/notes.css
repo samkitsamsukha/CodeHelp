@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+
+* {
+    font-family: rethink sans;
+}
+
+body {
+    background-color: rgb(247, 242, 253);
+    margin: 0px;
+}
+
+h1 {
+    color: rgb(78, 0, 78);
+    font-size: 24px;
+}
+
+div.heading {
+    padding: 20px;
+    background-color: rgb(205, 151, 255);
+    color: rgb(78, 0, 78);
+}
+
+#wm {
+    font-family: rethink sans;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    font-family: rethink sans;
+    font-size: 32px;
+    font-weight: 900;
+    /* margin: 20vw; */
+    margin: 0 auto;
+    color: rgb(78, 0, 78);
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(78, 0, 78);
+    margin: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.tracking {
+    background-color: rgb(205, 151, 255);
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#happy-coding {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(13, 0, 132);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.note {
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-family: rethink sans;
+    color: rgb(78, 0, 78);
+    border: none;
+    outline-color: rgb(78, 0, 78);
+    outline-width: 1px;
+    background-color: rgba(205, 151, 255, 0.15);
+    box-sizing: border-box;
+}
+
+.note::placeholder {
+    color: rgb(78, 0, 78);
+    opacity: 80%;
+}
+
+.note:hover,
+note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 100ms ease-in-out;
+}
+
+.btn {
+    height: 200px;
+    border-color: rgb(205, 151, 255);
+    background-color: rgba(205, 151, 255, 0.15);
+    border-radius: 10px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(205, 151, 255);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 100ms ease-in-out;
+}
