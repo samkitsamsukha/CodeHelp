@@ -6,9 +6,11 @@
 }
 body{
     background-color: rgb(243, 243, 254);
+    max-width: 100vw;
+    max-height: 100vh;
 }
 div.heading{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     padding: 20px;
     background-color: rgb(205, 151, 255);
     color: rgb(78, 0, 78);
@@ -27,7 +29,7 @@ a{
     font-family: rethink sans;
     font-size: 32px;
     font-weight: 900;
-    margin: auto;
+    margin: 2px 400px;
 }
 h1{
     font-family: rethink sans;
