@@ -1,7 +1,5 @@
 const formEl = document.querySelector(".form");
-
 const inputEl = document.querySelector(".input");
-
 const ulEl = document.querySelector(".list");
 
 let list = JSON.parse(localStorage.getItem("list"));
@@ -15,6 +13,18 @@ formEl.addEventListener("submit", (event) => {
   event.preventDefault();
   toDoList();
 });
+
+function updateLocalStorage() {
+  const liEls = document.querySelectorAll("li");
+  list = [];
+  liEls.forEach((liEl) => {
+    list.push({
+      name: liEl.innerText,
+      checked: liEl.classList.contains("checked"),
+    });
+  });
+  localStorage.setItem("list", JSON.stringify(list));
+}
 
 function toDoList(task) {
   let newTask = inputEl.value;
@@ -52,14 +62,3 @@ function toDoList(task) {
   updateLocalStorage();
 }
 
-function updateLocalStorage() {
-  const liEls = document.querySelectorAll("li");
-  list = [];
-  liEls.forEach((liEl) => {
-    list.push({
-      name: liEl.innerText,
-      checked: liEl.classList.contains("checked"),
-    });
-  });
-  localStorage.setItem("list", JSON.stringify(list));
-}

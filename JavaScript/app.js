@@ -64,7 +64,7 @@ const data = {
             replyingTo: "Samkit Samsukha",
             user: {
               image: {
-                png: "../Assets/Authors/jeffrey.jpg",
+                png: "//Assets/Authors/jeffrey.jpg",
                 webp: "../Assets/Authors/jeffrey.jpg",
               },
               username: "Jeffrey Mariaraj",
